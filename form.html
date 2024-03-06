@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      body {
+        background-color: rgb(177, 37, 132);
+      }
+      #main {
+        background-color: bisque;
+        margin-left: auto;
+        margin-right: auto;
+        width: 600px;
+        height: 600px;
+        border-radius: 10px;
+      }
+      h1 {
+        text-align: center;
+        background-color: black;
+        color: white;
+        border-radius: 10px 10px 0px 0px;
+      }
+      #div1 {
+        display: inline-block;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 25px;
+      }
+      #div1 > label {
+        margin-left: 13px;
+      }
+      #firstName {
+        height: 30px;
+        width: 170px;
+        border-radius: 10px;
+        margin-left: 10px;
+        background-color: blanchedalmond;
+        border-color: bisque;
+      }
+      #lastName {
+        height: 30px;
+        width: 170px;
+        border-radius: 10px;
+        margin-right: 10px;
+        border-color: bisque;
+        background-color: blanchedalmond;
+      }
+      #div2 {
+        margin-bottom: 25px;
+      }
+      #div2 > label {
+        flex-direction: row;
+        margin-left: 40px;
+      }
+      #cmpny {
+        display: inline-block;
+        margin-left: 10px;
+        width: 420px;
+        height: 30px;
+        border-radius: 10px;
+        background-color: blanchedalmond;
+        border-color: bisque;
+      }
+      #mail {
+        margin-left: 43px;
+        width: 418px;
+        height: 30px;
+        border-radius: 10px;
+        background-color: blanchedalmond;
+        border-color: bisque;
+      }
+
+      #Code {
+        width: 88px;
+        height: 35.2px;
+        border-radius: 10px;
+        margin-left: 40px;
+        background-color: blanchedalmond;
+      }
+      #text {
+        width: 325px;
+        height: 30px;
+        border-radius: 10px;
+        background-color: blanchedalmond;
+        border-color: bisque;
+      }
+      #phone {
+        margin-bottom: 25px;
+        height: 30px;
+        border-radius: 10px;
+      }
+      #label {
+        display: inline;
+        margin-left: 40px;
+      }
+      #Subject {
+        margin-left: 38px;
+        font-size: 16.6px;
+        color: black;
+        font-weight: 16.6px;
+        margin-bottom: 25px;
+      }
+      #Sub {
+        width: 425px;
+        height: 35.2px;
+        margin-left: 37px;
+        border-radius: 10px;
+        background-color: blanchedalmond;
+      }
+      #p1 {
+        font-weight: 30px;
+        margin-left: 35px;
+        /* display: inline; */
+      }
+      #Radio {
+        margin-bottom: 25px;
+        display: flex;
+        /* flex-direction: row; */
+      }
+      #Radio label {
+        margin-right: 30px;
+      }
+      button {
+        margin-left: 35px;
+        background-color: red;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100px;
+        height: 50;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <h1>EVENT REGISTRATION FORM</h1>
+      <form>
+        <div id="div1">
+          <label for="Name">Name:</label>
+          <input
+            type="text"
+            name="Name"
+            id="firstName"
+            maxlength="20"
+            placeholder="First Name"
+            required="required"
+          />
+          <!-- <p>First Name</p> -->
+          <label for="lastName"></label>
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="Last Name"
+            required="required"
+          />
+          <!-- <p>last name</p> -->
+        </div>
+        <br />
+
+        <div id="div2">
+          <label for="Company">Company:</label>
+          <input
+            type="text"
+            name="Company"
+            id="cmpny"
+            required="required"
+            maxlength="25"
+            placeholder="Your Company Name"
+          />
+        </div>
+        <br />
+
+        <div id="div2">
+          <label for="Email">Email:</label>
+          <input
+            type="email"
+            name="Email"
+            id="mail"
+            required="required"
+            placeholder="example@gmail.com"
+          />
+        </div>
+        <br />
+
+        <div id="phone">
+          <div id="label">
+            <label for="Phone">Phone:</label>
+          </div>
+
+          <select name="Phone" id="Code" required="required">
+            <option value="Area code">Area Code</option>
+            <option value="Pakistan">+92</option>
+            <option value="Afghanistan">+93</option>
+            <option value="Idia">+91</option>
+            <option value="Ameraica">+1</option>
+            <option value="Austrialia">+61</option>
+            <option value="Bangladish">+880</option>
+            <option value="Palestine">+970</option>
+            <option value="China">+86</option>
+            <option value="Russia">+7</option>
+            <option value="Iraq">+964</option>
+          </select>
+          <input
+            type="text"
+            placeholder="Phone Number "
+            id="text"
+            required="required"
+            maxlength="10"
+          />
+        </div>
+        <br />
+
+        <div id="Subject">
+          <label for="Subject">Subject:</label>
+          <select name="Subject" id="Sub" required="required">
+            <option value="option">Chose Option</option>
+            <option value="Computer Science">Web-Development</option>
+            <option value="Computer Science">Hacking</option>
+            <option value="Computer Science">Robotics</option>
+            <option value="Computer Science">App Development</option>
+          </select>
+        </div>
+
+        <p id="p1">Are you Exesting Customer ?</p>
+
+        <div id="Radio">
+          <label for="radio"></label>
+          <input
+            type="radio"
+            value="radio"
+            name="radio"
+            id="radio"
+            required="required"
+          />
+          <p>Yes</p>
+          <input type="radio" value="radio" name="radio" id="radio" />
+          <p>No</p>
+        </div>
+
+        <div id="submit">
+          <label for="submit"></label>
+          <button>REGISTER</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
