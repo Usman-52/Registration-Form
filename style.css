@@ -1,0 +1,130 @@
+body {
+    background-color: rgb(177, 37, 132);
+  }
+  #main {
+    background-color: bisque;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 600px;
+    border-radius: 10px;
+    margin-top: 200px;
+  }
+  h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+  }
+  #div1 {
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+  }
+  #div1 > label {
+    margin-left: 13px;
+  }
+  #firstName {
+    height: 30px;
+    width: 170px;
+    border-radius: 10px;
+    margin-left: 10px;
+    background-color: blanchedalmond;
+    border-color: bisque;
+  }
+  #lastName {
+    height: 30px;
+    width: 170px;
+    border-radius: 10px;
+    margin-right: 10px;
+    border-color: bisque;
+    background-color: blanchedalmond;
+  }
+  #div2 {
+    margin-bottom: 25px;
+  }
+  #div2 > label {
+    flex-direction: row;
+    margin-left: 40px;
+  }
+  #cmpny {
+    display: inline-block;
+    margin-left: 10px;
+    width: 420px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: blanchedalmond;
+    border-color: bisque;
+  }
+  #mail {
+    margin-left: 43px;
+    width: 418px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: blanchedalmond;
+    border-color: bisque;
+  }
+
+  #Code {
+    width: 88px;
+    height: 35.2px;
+    border-radius: 10px;
+    margin-left: 40px;
+    background-color: blanchedalmond;
+  }
+  #text {
+    width: 325px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: blanchedalmond;
+    border-color: bisque;
+  }
+  #phone {
+    margin-bottom: 25px;
+    height: 30px;
+    border-radius: 10px;
+  }
+  #label {
+    display: inline;
+    margin-left: 40px;
+  }
+  #Subject {
+    margin-left: 38px;
+    font-size: 16.6px;
+    color: black;
+    font-weight: 16.6px;
+    margin-bottom: 25px;
+  }
+  #Sub {
+    width: 425px;
+    height: 35.2px;
+    margin-left: 37px;
+    border-radius: 10px;
+    background-color: blanchedalmond;
+  }
+  #p1 {
+    font-weight: 30px;
+    margin-left: 35px;
+    /* display: inline; */
+  }
+  #Radio {
+    margin-bottom: 25px;
+    display: flex;
+    /* flex-direction: row; */
+  }
+  #Radio label {
+    margin-right: 30px;
+  }
+  button {
+    margin-left: 35px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+    height: 50;
+  }
